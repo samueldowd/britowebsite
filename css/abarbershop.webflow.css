@@ -118,7 +118,7 @@ p {
   position: static;
   padding-top: 36px;
   padding-bottom: 13px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+  border-bottom: 0 solid rgba(0, 0, 0, 0.09);
   background-color: #a7ddf2;
   background-image: none;
 }
@@ -332,7 +332,7 @@ p {
 }
 .footer-link {
   margin-left: 8px;
-  border-bottom: 1px solid rgba(131, 125, 153, 0.34);
+  border-bottom: 0 solid rgba(131, 125, 153, 0.34);
   -webkit-transition: all 200ms ease;
   -o-transition: all 200ms ease;
   transition: all 200ms ease;
@@ -341,7 +341,7 @@ p {
   text-decoration: none;
 }
 .footer-link:hover {
-  border-bottom: 1px solid rgba(131, 125, 153, 0.86);
+  border-bottom: 0 solid rgba(131, 125, 153, 0.86);
 }
 .footer-text {
   display: inline;
