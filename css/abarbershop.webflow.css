@@ -116,7 +116,7 @@ p {
 }
 .section {
   position: static;
-  padding-top: 36px;
+  padding-top: 15px;
   padding-bottom: 13px;
   border-bottom: 0 solid rgba(0, 0, 0, 0.09);
   background-color: #a7ddf2;
@@ -277,6 +277,14 @@ p {
   line-height: 28px;
   text-align: center;
   text-shadow: none;
+}
+.social-link-dec a:link {
+  color: black;
+  text-decoration: none;
+}
+.social-link-dec a:visited {
+  color: black;
+  text-decoration: none;
 }
 .section.purple h2 {
   text-decoration: none;
@@ -441,6 +449,11 @@ p {
   margin-bottom: -37px;
   text-align: center;
 }
+@media (max-width: 2160px) {
+  .section.grey img {
+  width: 760px;
+  }
+}
 @media (max-width: 991px) {
   h2 {
     display: block;
@@ -497,10 +510,6 @@ p {
     background-image: url(../images/l.jpg);
     background-position: 0px 42%;
   }
-  .section.grey {
-    background-image: url('http://hw-cdn-prod-assets.webflow.com/52507bdf89bf18901900000f/l%20(1).jpg');
-    background-position: 50% 50%;
-  }
   .section.purple {
     padding-bottom: 22px;
   }
@@ -510,6 +519,10 @@ p {
   .app-name {
     width: 280px;
     font-size: 24px;
+  }
+  .section.grey img {
+      min-width: 760px;
+      margin: 0 auto;
   }
   .hero-header {
     font-size: 38px;
@@ -638,6 +651,10 @@ p {
     margin-left: auto;
     text-align: center;
   }
+  .section.grey img {
+      min-width: 470px;
+      margin: 0 auto;
+  }
 }
 @media (max-width: 479px) {
   h2 {
@@ -694,10 +711,7 @@ p {
     padding-bottom: 0px;
   }
   .section.grey {
-    padding-top: 25px;
     padding-bottom: 25px;
-    background-image: none;
-    background-position: 0% 0%;
   }
   .section.purple {
     padding-bottom: 32px;
@@ -740,5 +754,9 @@ p {
   }
   .address {
     color: white;
+  }
+  .section.grey img {
+      min-width: 0px;
+      margin: 0 auto;
   }
 }
