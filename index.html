@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/abarbershop.webflow.css">
     <link rel="stylesheet" type="text/css" href="foundation-icons/foundation-icons.css">
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script>
       WebFont.load({
         google: {
@@ -29,7 +30,7 @@
           <div class="app-name">A Barber SHop</div>
           <p class="address">5 Main St. Watertown, MA</p>
         </div>
-        <div class="w-col w-col-8 nav-column"><a class="nav-link" href="#page-nav-organize">Hours</a><a class="nav-link" href="#page-nav-display">CONTACT</a><a class="w-hidden-main w-inline-block button" href="tel:+16179241085"><h4 class="w-hidden-main">(617) 924-1085</h4></a>
+        <div class="w-col w-col-8 nav-column"><a class="nav-link" href="#page-nav-organize">Hours</a><a class="nav-link" href="#page-nav-display">CONTACT</a><a class="w-hidden-main w-inline-block button" id="phone" href="tel:+16179241085"><h4 class="w-hidden-main">(617) 924-1085</h4></a>
           <p class="w-hidden-medium w-hidden-small w-hidden-tiny title-bar">Call to make an appointment today: (617) 924-1085</p>
         </div>
       </div>
@@ -78,7 +79,7 @@
     <h2 class="price-text">Call to make an appointment today!</h2>
     <div class="w-hidden-medium w-hidden-small w-hidden-tiny price-text">(617) 924-1085</div>
     <div class="w-container">
-      <a class="w-hidden-main w-inline-block button app-store" href="tel:+16179241085">
+      <a class="w-hidden-main w-inline-block button app-store" id="phone" href="tel:+16179241085">
         <div class="phone-number">(617) 924-1085</div>
       </a>
     </div>
@@ -90,10 +91,15 @@
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
 
 	  ga('create', 'UA-45956380-1', 'abarbershop.co');
 	  ga('send', 'pageview');
+    </script>
+    <script>
+    $('#phone').on('click', function() {
+      ga('send', 'event', 'button', 'click', 'nav-buttons');
+    });
 	</script>
 </body>
 </html>
